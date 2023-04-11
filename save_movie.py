@@ -12,7 +12,7 @@ mydb = conn["movies"]
 
 mycol = mydb["movies"]
 
-df = pd.read_csv("ml-100k/u.item", sep="|", encoding="ISO-8859-1", header=None)
+df = pd.read_csv("data/u.item", sep="|", encoding="ISO-8859-1", header=None)
 
 df_ = df.iloc[:, :2]
 

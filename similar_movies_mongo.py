@@ -13,7 +13,7 @@ mydb = conn["movies"]
 mycol = mydb["movies-similar"]
 
 df = pd.read_csv(
-    "ml-100k/u.data", sep="\t", names=["UserID", "MovieID", "Rating", "TimeStamp"]
+    "data/u.data", sep="\t", names=["UserID", "MovieID", "Rating", "TimeStamp"]
 )
 
 movie_df = df[["UserID", "MovieID", "Rating"]].copy()
